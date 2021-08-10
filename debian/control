@@ -27,7 +27,6 @@ Maintainer: Neon CI <neon@kde.org>
 Package: buho
 Architecture: any
 Depends: qml-module-org-kde-mauikit,
-         qml-module-qmltermwidget,
          qml-module-qt-labs-platform,
          qml-module-qtwebview,
          ${misc:Depends},
