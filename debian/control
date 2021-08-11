@@ -20,10 +20,10 @@ Build-Depends: debhelper,
                qtquickcontrols2-5-dev,
                qtwebengine5-dev
 Standards-Version: 4.2.1
-Homepage: https://github.com/maui-project/buho
-Vcs-Git: https://anongit.neon.kde.org/mobile/buho
-Vcs-Browser: https://packaging.neon.kde.org/mobile/buho.git
-Maintainer: Neon CI <neon@kde.org>
+Homepage: https://invent.kde.org/maui/booth/
+Vcs-Git: https://invent.kde.org/maui/booth/booth.git
+Vcs-Browser: https://invent.kde.org/maui/booth/
+Maintainer: Uri Herrera <uri_herrera@nxos.org>
 
 Package: buho
 Architecture: any
