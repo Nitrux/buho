@@ -48,6 +48,7 @@ DEBIAN_FRONTEND=noninteractive apt -qq -yy install --no-install-recommends \
 	libqt5svg5-dev \
 	mauikit \
 	mauikit-accounts \
+	mauikit-filebrowsing \
 	qtbase5-dev \
 	qtdeclarative5-dev \
 	qtquickcontrols2-5-dev \
@@ -103,7 +104,7 @@ checkinstall -D -y \
 	--pakdir=../.. \
 	--maintainer="Uri Herrera <uri_herrera@nxos.org>" \
 	--provides=buho \
-	--requires="libc6,libkf5coreaddons5,libkf5i18n5,libqt5core5a,libqt5gui5,libqt5network5,libqt5qml5,libqt5sql5,libqt5widgets5,libstdc++6,mauikit \(\>= 2.1.0\),mauikit-accounts \(\>= 2.1.0\),qml-module-qt-labs-platform,qml-module-qtwebview" \
+	--requires="libc6,libkf5coreaddons5,libkf5i18n5,libqt5core5a,libqt5gui5,libqt5network5,libqt5qml5,libqt5sql5,libqt5widgets5,libstdc++6,mauikit \(\>= 2.1.0\),mauikit-accounts \(\>= 2.1.0\),mauikit-filebrowsing \(\>= 2.1.0\),qml-module-qt-labs-platform,qml-module-qtwebview" \
 	--nodoc \
 	--strip=no \
 	--stripso=yes \
