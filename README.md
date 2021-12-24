@@ -1,7 +1,7 @@
 # Buho
-![](https://mauikit.org/wp-content/uploads/2018/12/maui_project_logo.png)
+![](https://raw.githubusercontent.com/Nitrux/luv-icon-theme/master/Luv/apps/64/buho.svg)
 
-[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Generic badge](https://img.shields.io/badge/OS-Linux-blue.svg)](https://shields.io/)
+[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Generic badge](https://img.shields.io/badge/OS-Linux-blue.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/Framework-MauiKit-green.svg)](https://shields.io/)
 
 _Easy-to-use note-taking application with “tags” support._
 
