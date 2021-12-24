@@ -60,6 +60,11 @@ git clone --single-branch --branch master https://invent.kde.org/maui/buho.git
 
 rm -rf buho/{android_files,macos_files,windows_files,examples,LICENSES,README.md}
 
+
+### Fix .desktop (values extending the format should start with "X-")
+
+sed -i 's+Categories=Qt;KDE;Utility;TextTools;TextEditor;Todo;X-KDE-Utilities-Desktop;+Categories=Qt;KDE;Utility;TextTools;TextEditor;X-ToDo;X-KDE-Utilities-Desktop;+g' buho/src/org.kde.buho.desktop
+
 ### Compile Source
 
 mkdir -p buho/build && cd buho/build
