@@ -100,7 +100,7 @@ checkinstall -D -y \
 	--install=no \
 	--fstrans=yes \
 	--pkgname=buho-git \
-	--pkgversion=2.1.1+git+1 \
+	--pkgversion=2.1.1+git+2 \
 	--pkgarch=amd64 \
 	--pkgrelease="1" \
 	--pkglicense=LGPL-3 \
