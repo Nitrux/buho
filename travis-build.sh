@@ -44,14 +44,18 @@ DEBIAN_FRONTEND=noninteractive apt -qq -yy install --no-install-recommends \
 	libkf5kio-dev \
 	libkf5notifications-dev \
 	libkf5service-dev \
-	libqt5webview5-dev \
 	libqt5svg5-dev \
-	mauikit-git \
+	libqt5webview5-dev \
+	libwayland-dev \
 	mauikit-accounts-git \
 	mauikit-filebrowsing-git \
+	mauikit-git \
 	qtbase5-dev \
 	qtdeclarative5-dev \
 	qtquickcontrols2-5-dev \
+	qtwayland5 \
+	qtwayland5-dev-tools \
+	qtwayland5-private-dev \
 	qtwebengine5-dev
 
 ### Clone repo.
