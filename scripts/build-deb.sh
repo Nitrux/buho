@@ -4,22 +4,19 @@ set -x
 
 ### Update sources
 
-wget -qO /etc/apt/sources.list.d/nitrux-main-compat-repo.list https://raw.githubusercontent.com/Nitrux/iso-tool/development/configs/files/sources.list.nitrux
+wget -qO /etc/apt/sources.list.d/nitrux-main-compat-repo.list https://raw.githubusercontent.com/Nitrux/iso-tool/development/configs/files/sources/nitrux-repo.list
 
-wget -qO /etc/apt/sources.list.d/nitrux-testing-repo.list https://raw.githubusercontent.com/Nitrux/iso-tool/development/configs/files/sources.list.nitrux.testing
-
-DEBIAN_FRONTEND=noninteractive apt-key adv --keyserver keyserver.ubuntu.com --recv-keys \
-	55751E5D > /dev/null
+wget -qO /etc/apt/sources.list.d/nitrux-testing-repo.list https://raw.githubusercontent.com/Nitrux/iso-tool/development/configs/files/sources/nitrux-testing-repo.list
 
 curl -L https://packagecloud.io/nitrux/repo/gpgkey | apt-key add -;
 curl -L https://packagecloud.io/nitrux/compat/gpgkey | apt-key add -;
 curl -L https://packagecloud.io/nitrux/testing/gpgkey | apt-key add -;
 
-DEBIAN_FRONTEND=noninteractive apt -qq update
+apt -qq update
 
 ### Install Package Build Dependencies #2
 
-DEBIAN_FRONTEND=noninteractive apt -qq -yy install --no-install-recommends \
+apt -qq -yy install --no-install-recommends \
 	mauikit-git \
 	mauikit-accounts-git \
 	mauikit-filebrowsing-git
@@ -47,6 +44,8 @@ cmake \
 
 make -j$(nproc)
 
+make install
+
 ### Run checkinstall and Build Debian Package
 
 >> description-pak printf "%s\n" \
@@ -71,7 +70,7 @@ checkinstall -D -y \
 	--pakdir=. \
 	--maintainer=uri_herrera@nxos.org \
 	--provides=buho \
-	--requires="libc6,libkf5coreaddons5,libkf5i18n5,libqt5core5a,libqt5gui5,libqt5network5,libqt5qml5,libqt5sql5,libqt5widgets5,libstdc++6,mauikit-git \(\>= 2.1.2+git+1\),mauikit-accounts-git \(\>= 2.1.2+git+1\),mauikit-filebrowsing-git \(\>= 2.1.2+git+1\),qml-module-qt-labs-platform,qml-module-qtwebview" \
+	--requires="libc6,libkf5coreaddons5,libkf5i18n5,libqt5core5a,libqt5gui5,libqt5network5,libqt5qml5,libqt5sql5,libqt5widgets5,libstdc++6,mauikit-git \(\>= 2.2.1+git+1\),mauikit-accounts-git \(\>= 2.2.1+git+1\),mauikit-filebrowsing-git \(\>= 2.2.1+git+1\),qml-module-qt-labs-platform,qml-module-qtwebview" \
 	--nodoc \
 	--strip=no \
 	--stripso=yes \
