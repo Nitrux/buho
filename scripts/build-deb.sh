@@ -71,7 +71,7 @@ checkinstall -D -y \
 	--pakdir=. \
 	--maintainer=uri_herrera@nxos.org \
 	--provides=buho \
-	--requires="libc6,mauikit-git \(\>= 4.0.1\),mauikit-filebrowsing-git \(\>= 4.0.1\),mauikit-terminal-git \(\>= 4.0.1\),mauikit-texteditor-git \(\>= 4.0.1\)" \
+	--requires="mauikit-accounts-git \(\>= 4.0.1\),mauikit-filebrowsing-git \(\>= 4.0.1\),mauikit-git \(\>= 4.0.1\),mauikit-terminal-git \(\>= 4.0.1\),mauikit-texteditor-git \(\>= 4.0.1\)" \
 	--nodoc \
 	--strip=no \
 	--stripso=yes \
