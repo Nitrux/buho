@@ -81,7 +81,7 @@ checkinstall -D -y \
 	--pakdir=. \
 	--maintainer=uri_herrera@nxos.org \
 	--provides=buho \
-	--requires="libkf6kiofilewidgets6,mauikit-accountsBUHO \(\>= 4.0.2\),mauikit-filebrowsingBUHO \(\>= 4.0.2\),mauikitBUHO \(\>= 4.0.2\),mauikit-terminalBUHO \(\>= 4.0.2\),mauikit-texteditorBUHO \(\>= 4.0.2\),qml6-module-org-kde-sonnet,qml6-module-qtcore,qml6-module-qtquick-effects" \
+	--requires="libkf6kiofilewidgets6,mauikit-accounts \(\>= 4.0.2\),mauikit-filebrowsing \(\>= 4.0.2\),mauikit \(\>= 4.0.2\),mauikit-terminal \(\>= 4.0.2\),mauikit-texteditor \(\>= 4.0.2\),qml6-module-org-kde-sonnet,qml6-module-qtcore,qml6-module-qtquick-effects" \
 	--nodoc \
 	--strip=no \
 	--stripso=yes \
