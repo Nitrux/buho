@@ -11,7 +11,7 @@ set -e
 
 # -- Download Source
 
-git clone --depth 1 --branch "$BUHO_BRANCH" https://github.com/Nitrux/maui-buho
+git clone --depth 1 --branch "$BUHO_BRANCH" https://github.com/Nitrux/maui-buho.git
 
 
 # -- Compile Source
